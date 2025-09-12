@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raiden Shogun | Genshin Fanpage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #f4f0f8;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+    }
+    .btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .login-btn {
+      background: white;
+      color: black;
+      border: 1px solid #ccc;
+    }
+    .signup-btn {
+      background: #cba6f7;
+      color: white;
+      margin-left: 10px;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      background: #cba6f7;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      margin: 20px;
+      align-items: center;
+      text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      gap: 20px;
+    }
+    .artwork, .tags {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .artwork img {
+      border-radius: 10px;
+      width: 90%;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+    .search-box {
+      background: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .search-box input {
+      border: none;
+      outline: none;
+      flex: 1;
+      background: transparent;
+    }
+    .tag {
+      background: #e8d9f1;
+      padding: 10px 15px;
+      border-radius: 12px;
+      margin: 5px 0;
+      text-align: center;
+      width: 80%;
+    }
+
+    /* Responsive Layout */
+    @media (min-width: 768px) {
+      header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      nav {
+        margin-top: 0;
+      }
+      .hero {
+        flex-direction: row;
+        text-align: left;
+      }
+      .hero-text {
+        flex: 1;
+        margin-right: 20px;
+      }
+      .section {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .artwork img {
+        width: 150px;
+      }
+      .tags {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <strong style="font-size: 20px;">Genshin Fanpage</strong>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#"><u>Search</u></a>
+      <a href="#">Message</a>
+    </nav>
+    <div style="margin-top: 10px;">
+      <button class="btn login-btn">Log in</button>
+      <button class="btn signup-btn">Sign up</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Raiden Shogun</h1>
+      <p>She is the God of Eternity from Inazuma and the current Electro Archon</p>
+      <button class="btn login-btn">Read More</button>
+    </div>
+    <img src="raiden shogun.jpg" alt="Raiden Shogun">
+  </section>
+
+  <section class="section">
+    <div class="artwork">
+      <h3>Artwork</h3>
+      <img src= "raiden.jpg" alt="Raiden 1">
+      <img src="shogun.jpg" alt="Raiden 2">
+      <button class="btn login-btn" style="margin-top: 10px;">View More</button>
+    </div>
+
+    <div>
+      <h3>Recent Search</h3>
+      <div class="search-box"><input type="text" value="Raiden shogun build" readonly></div>
+      <div class="search-box"><input type="text" value="Raiden shogun wallpaper" readonly></div>
+      <div class="search-box"><input type="text" value="Raiden shogun cosplay" readonly></div>
+      <div class="search-box"><input type="text" value="Raiden shogun icon" readonly></div>
+    </div>
+
+    <div class="tags">
+      <div class="tag">Electro Character</div>
+      <div class="tag">Inazuma</div>
+      <div class="tag">Constellation</div>
+    </div>
+  </section>
+
+</body>
+</html>
